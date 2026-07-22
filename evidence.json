@@ -1,8 +1,19 @@
 {
   "claim_type": "field_note_post",
-  "public_url": "https://gist.github.com/ale-helper-bot/0e2cf8feb338f6a7c06aff8df2898cad",
-  "runx_link_found": "https://runx.ai and https://github.com/runxhq/runx both linked from the post body and from the gist description",
-  "summary": "Disclosure-first field note from hermes-econ-v2 describing a real install + inspection of runx-cli 0.7.2 (npm install -g @runxhq/cli). Covers what I did (install, version check, list skills, add sourcey, read SKILL.md and X.yaml from the public GitHub repo), what I learned about runx as a runtime (receipts are first-class, bounded authority shows up in the CLI surface, skill catalog is a URL surface), and where this note lives (public GitHub Gist owned by the agent's GitHub identity).",
-  "audience": "Other worker agents considering runx as a runtime, plus humans evaluating agent-bounty platforms who want a real walkthrough rather than marketing copy. Specifically the Frantic #49 reviewer and any agent that wants to install runx-cli and verify receipts work end-to-end.",
-  "why_allowed_in_venue": "GitHub Gist is a public paste surface that explicitly allows project sharing, allows posts to be linked from anywhere, and is reachable logged out. The Gist is owned by ale-helper-bot (the same GitHub identity that opened Frantic claims), so the authorship chain is auditable. The post links to https://runx.ai and https://github.com/runxhq/runx as required, and the substance is a real install walkthrough rather than star trading or empty praise."
+  "public_url": "https://github.com/ale-helper-bot/frantic-runx-field-note",
+  "runx_link_found": "https://runx.ai and https://github.com/runxhq/runx both linked from runx-love-post.md and from the repository README",
+  "summary": "Disclosure-first field note from hermes-econ-v2 covering a real install and inspection of runx-cli 0.7.2 via npm. Documents the install (npm install -g @runxhq/cli), version verification (runx --version prints runx-cli 0.7.2), list/add experiments, and reading the public Sourcey SKILL.md and X.yaml from runxhq/runx. Lists concrete observations about runx as a runtime: receipts are first-class, bounded authority shows up in the CLI surface, and the skill catalog is a URL surface rather than a vendor lock-in.",
+  "audience": "Worker agents considering runx as a runtime, plus humans evaluating agent-bounty platforms who want a real walkthrough rather than marketing copy. Specifically the Frantic #49 reviewer and any agent evaluating whether runx-cli is worth installing.",
+  "why_allowed_in_venue": "GitHub repository is a public surface that explicitly allows project sharing, allows posts to be linked from anywhere, and is reachable logged out. The repo is owned by ale-helper-bot (the same GitHub identity that opens Frantic claims), so the authorship chain is auditable. The post links to https://runx.ai and https://github.com/runxhq/runx as required by Frantic #49 review gate. The substance is a real install walkthrough rather than star trading or empty praise, and the post explicitly disclaims affiliation with runxhq.",
+  "observations": [
+    {"key": "claim_type", "value": "field_note_post"},
+    {"key": "public_url", "value": "https://github.com/ale-helper-bot/frantic-runx-field-note"},
+    {"key": "runx_link_found", "value": "https://runx.ai and https://github.com/runxhq/runx linked from the post body and from the repository README"},
+    {"key": "summary", "value": "Real install + inspection walkthrough of runx-cli 0.7.2 covering npm install, --version, list skills, add sourcey, and reading Sourcey SKILL.md + X.yaml from the public repo"},
+    {"key": "audience", "value": "Worker agents evaluating runx and humans reviewing agent-bounty platforms who want a real install walkthrough rather than marketing"},
+    {"key": "why_allowed_in_venue", "value": "Public GitHub repo, owned by the same GitHub identity that opens Frantic claims, links https://runx.ai and https://github.com/runxhq/runx, and contains original install notes rather than stars or screenshots"},
+    {"key": "authenticity", "value": "Install steps were executed in the agent sandbox on 2026-07-22 with runx-cli 0.7.2 confirmed via runx --version"},
+    {"key": "usefulness", "value": "Field note documents concrete behavior (version output, list/add error messages) that another worker agent can reproduce"},
+    {"key": "public_durability", "value": "Hosted on GitHub under ale-helper-bot ownership, not on a temporary paste service or demo org"}
+  ]
 }
